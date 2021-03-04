@@ -12,39 +12,39 @@ Example:
 
 From the list of words: {"cat","apple","ball","dog"} find the ones that are present in the following grid:
 
-a c a d
-t x p p
-o g e l
-b a l l
+a c a d  
+t x p p  
+o g e l  
+b a l l  
 
-Result: {"cat", "apple", "ball"}
+Result: {"cat", "apple", "ball"}  
 
-Explanantion:
+Explanantion:  
 
-Each word's location is highlighted (using capitalisation) below:
+Each word's location is highlighted (using capitalisation) below:  
 
-"cat":
-A C a d
-T x p p
-o g e l
-b a l l
+"cat":  
+A C a d  
+T x p p  
+o g e l  
+b a l l  
 
-"apple"
-a c A d
-t x P P
-o g E L
-b a l l
+"apple"  
+a c A d  
+t x P P  
+o g E L  
+b a l l  
 
-"ball":
-a c a d
-t x p p
-o g e l
-B A L L
-
-
+"ball":  
+a c a d  
+t x p p  
+o g e l  
+B A L L  
 
 
-Algorithms and Data Structures used:
+
+
+Algorithms and Data Structures used:  
 
 We make use of backtracking, using a recursive depth-first search (DFS) starting from each cell and simultaneously traverse through all the words which match. Iterating through each word for all the cells of the grid is inefficient.
 So, we use a Trie data structure to store all the words that we need to find in the grid, and we traverse through the trie for each cell of the grid.
@@ -73,9 +73,9 @@ O(L*K).
 This space is excluding the grid and list of words themselves, since they are a part of the problem statement.
 
 
-Instructions to execute the code:
-1>$ make
-2>$ ./main
+Instructions to execute the code:  
+1>$ make  
+2>$ ./main  
 
 
 Input and output expected:
@@ -88,45 +88,45 @@ Sample run of the code (console input and output):
 
 
 
-Enter the number of rows in the grid:4
+Enter the number of rows in the grid:4  
 
-Enter the number of columns in the grid:4
+Enter the number of columns in the grid:4  
 
-Enter row # 1 of the grid (as a single word of length = 4):acad
+Enter row # 1 of the grid (as a single word of length = 4):acad  
 
-Enter row # 2 of the grid (as a single word of length = 4):txpp
+Enter row # 2 of the grid (as a single word of length = 4):txpp  
 
-Enter row # 3 of the grid (as a single word of length = 4):ogel
+Enter row # 3 of the grid (as a single word of length = 4):ogel  
 
-Enter row # 4 of the grid (as a single word of length = 4):ball
+Enter row # 4 of the grid (as a single word of length = 4):ball  
 
-Matrix:
-a c a d
-t x p p
-o g e l
-b a l l
+Matrix:  
+a c a d  
+t x p p  
+o g e l  
+b a l l  
 
-Enter the number of words to find in the grid:4
+Enter the number of words to find in the grid:4  
 
-Enter word # 1
-cat
+Enter word # 1  
+cat  
 
-Enter word # 2
-apple
+Enter word # 2  
+apple  
 
-Enter word # 3
-ball
+Enter word # 3  
+ball  
 
-Enter word # 4
-dog
+Enter word # 4  
+dog  
 
-Words Entered:
-cat
-apple
-ball
-dog
+Words Entered:  
+cat  
+apple  
+ball  
+dog  
 
-Words from the list found in the grid:
-cat
-apple
-ball
+Words from the list found in the grid:  
+cat  
+apple  
+ball  
